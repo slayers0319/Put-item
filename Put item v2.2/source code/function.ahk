@@ -66,8 +66,9 @@ move(inputx,inputy)
                 break
             }
                 MouseMove, %x%, %y% ,0
-                sleep StorageSpeed
+                sleep StorageSpeed/2
                 click, left
+                sleep StorageSpeed/2
                 if( (y >= inputy+offset*3) And (x < inputx+offset*2) ){
                     Break
                 }
