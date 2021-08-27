@@ -2,7 +2,7 @@
 
 ;-----------Title-------------------------------------
 Gui Font, s20, Calibri
-Gui Add, Text, x8 y8 w154 h23 +0x200, Put item v2.0
+Gui Add, Text, x8 y8 w154 h23 +0x200, Put item v2.2
 Gui Font
 ;-----------Craft-------------------------------------
 Gui Font, s16, Calibri
@@ -69,7 +69,7 @@ Gui Add, Edit, vresolutionY x480 y80 w54 h29, %resolutionY%
 Gui Add, Button, x400 y304 w133 h39, &Apply
 
 
-Gui Show, w544 h351, Put item v2.0
+Gui Show, w544 h351, Put item v2.2
 Return
 
 GuiEscape:

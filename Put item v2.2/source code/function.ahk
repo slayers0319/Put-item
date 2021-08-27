@@ -205,7 +205,7 @@ look(inputx,inputy){
 }
 
 Alteration(){
-    
+    flag:=1
     MouseMove, CurrentPage[1], CurrentPage[2] ,1
     Send ^!c
     sleep speed
@@ -214,20 +214,38 @@ Alteration(){
     Send ^!c
     Loop 2000{
         if( GetKeyState("f4" , "P") ){
+            Send, {LShift Up}
+            Send, {Ctrl Up}
+            Send, {Alt Up}
+            Send, {c Up}
             return
         }
         if stop(){  ;success
+            Send, {LShift Up}
             Send, {Ctrl Up}
             Send, {Alt Up}
             Send, {c Up}
             return
         }else{
-            handAlteration()    ;點改造
+            if(flag){
+                Send, {LShift Down}
+                handAlteration()    ;點改造
+                flag:=0
+                ;MsgBox, -----%flag%
+            }else{
+                Send, {LShift Down}
+                MouseMove, CurrentPage[1], CurrentPage[2] ,1
+                sleep speed*2
+                click, left
+                ;MsgBox, %flag%-----
+            }
             sleep speed
             if havepre(){   ;有前綴?
                 MouseMove, CurrentPage[1], CurrentPage[2] ,1
                 Continue
             }else{
+                flag:=1
+                Send, {LShift Up}
                 handAugmentation()  ;點增幅
                 sleep speed
             }
@@ -254,8 +272,8 @@ havepre(){
     sleep 10
     copy()
     clipboardd = %Clipboard%
-
-    If InStr(clipboardd, %prefix%){
+    IfInString clipboardd, %prefix%
+    {
         return 1
     }
     return 0
@@ -280,6 +298,10 @@ stop(){
         SoundPlay, %soundg%
         MsgBox, %Mod1% The string was found.
         SoundSet, +%SoundVolume%
+
+        Send, {LShift Up}
+        Send, {Ctrl Up}
+        Send, {Alt Up}
         return 1
     }
 
@@ -289,6 +311,10 @@ stop(){
         SoundPlay, %soundg%
         MsgBox, %Mod2% The string was found.
         SoundSet, +%SoundVolume%
+
+        Send, {LShift Up}
+        Send, {Ctrl Up}
+        Send, {Alt Up}
         return 1
     }
 
@@ -298,6 +324,10 @@ stop(){
         SoundPlay, %soundg%
         MsgBox, %Mod3% The string was found.
         SoundSet, +%SoundVolume%
+                
+        Send, {LShift Up}
+        Send, {Ctrl Up}
+        Send, {Alt Up}
         return 1
     }
 
@@ -307,12 +337,15 @@ stop(){
         SoundPlay, %soundg%
         MsgBox, %Mod4% The string was found.
         SoundSet, +%SoundVolume%
+                
+        Send, {LShift Up}
+        Send, {Ctrl Up}
+        Send, {Alt Up}
         return 1
     }
 }
 
 ;點改造
-
 handAlteration(){
     MouseMove, OrbOfAlteration[1], OrbOfAlteration[2] ,1
     ;btn("RButton")
