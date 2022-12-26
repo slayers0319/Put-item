@@ -77,15 +77,15 @@ Return
 
     $f5::Coord()
 
-    $f7::Binding(CurrentPage, OrbOfScouring, OrbOfbinding)
+    ; $f7::Binding(CurrentPage, OrbOfScouring, OrbOfbinding)
 
-    $f6::look(origin[1], origin[2])
+    ; $f6::look(origin[1], origin[2])
 
-    $f8::Prophecy(GetProphecy, Seal, origin)
+    ; $f8::Prophecy(GetProphecy, Seal, origin)
 
-    $f9::DestroyProphecy()
+    ; $f9::DestroyProphecy()
 
-    $f2::Chance()
+     ;$f2::Chance()
 
     $f12::Alteration()
 

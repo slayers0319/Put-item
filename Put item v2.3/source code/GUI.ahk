@@ -2,7 +2,7 @@
 
 ;-----------Title-------------------------------------
 Gui Font, s20, Calibri
-Gui Add, Text, x8 y8 w154 h23 +0x200, Put item v2.2
+Gui Add, Text, x8 y8 w154 h23 +0x200, Put item v2.3
 Gui Font
 ;-----------Craft-------------------------------------
 Gui Font, s16, Calibri
@@ -43,20 +43,20 @@ Gui Font, s16, Calibri
 Gui Add, GroupBox, x232 y40 w159 h303, HotkeyList
 Gui Font
 Gui Font, s12, 微軟正黑體
-Gui Add, Text, x240 y72 w70 h23 +0x200, 機會重鑄
+; Gui Add, Text, x240 y72 w70 h23 +0x200, 機會重鑄
 Gui Add, Text, x240 y104 w70 h23 +0x200, 儲倉
 Gui Add, Text, x240 y136 w70 h23 +0x200, 停止動作
 Gui Add, Text, x240 y168 w111 h23 +0x200, 顯示滑鼠座標
-Gui Add, Text, x240 y200 w70 h23 +0x200, 尋求預言
-Gui Add, Text, x240 y232 w70 h23 +0x200, 摧毀物品
+; Gui Add, Text, x240 y200 w70 h23 +0x200, 尋求預言
+; Gui Add, Text, x240 y232 w70 h23 +0x200, 摧毀物品
 Gui Add, Text, x240 y264 w70 h23 +0x200, 改造增幅
 Gui Add, Text, x240 y296 w70 h23 +0x200, GUI視窗
-Gui Add, Text, x352 y72 w24 h23 +0x200, F2
+; Gui Add, Text, x352 y72 w24 h23 +0x200, F2
 Gui Add, Text, x352 y104 w24 h23 +0x200, F3
 Gui Add, Text, x352 y136 w24 h23 +0x200, F4
 Gui Add, Text, x352 y168 w24 h23 +0x200, F5
-Gui Add, Text, x352 y200 w24 h23 +0x200, F8
-Gui Add, Text, x352 y232 w24 h23 +0x200, F9
+; Gui Add, Text, x352 y200 w24 h23 +0x200, F8
+; Gui Add, Text, x352 y232 w24 h23 +0x200, F9
 Gui Add, Text, x352 y264 w28 h23 +0x200, F12
 Gui Add, Text, x352 y296 w28 h23 +0x200, F10
 Gui Font
@@ -69,7 +69,7 @@ Gui Add, Edit, vresolutionY x480 y80 w54 h29, %resolutionY%
 Gui Add, Button, x400 y304 w133 h39, &Apply
 
 
-Gui Show, w544 h351, Put item v2.2
+Gui Show, w544 h351, Put item v2.3
 Return
 
 GuiEscape:
