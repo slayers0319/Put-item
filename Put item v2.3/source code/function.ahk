@@ -147,6 +147,23 @@ DestroyProphecy()
     SendInput, {Enter}
 }
 
+ExitGame()
+{
+    SendInput, {Enter}
+    Clipboard = /exit
+    Send ^v 
+    SendInput, {Enter}
+}
+
+Hideout()
+{
+    SendInput, {Enter}
+    Clipboard = /hideout
+    Send ^v 
+    SendInput, {Enter}
+}
+
+
 Chance()
 {
     Loop 500{

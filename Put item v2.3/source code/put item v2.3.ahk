@@ -89,6 +89,9 @@ Return
 
     $f12::Alteration()
 
+    `::ExitGame()
+
+    $f2::Hideout()
     ; $f1::test(ResolutionRatio)
 
     ; Esc::ExitApp
