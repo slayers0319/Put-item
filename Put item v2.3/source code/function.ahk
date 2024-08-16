@@ -52,6 +52,13 @@ Coord()
     }
 }
 
+tick()
+{
+MouseMove, 970, 730 ,1
+click, left
+MouseMove, 1600, 880 ,1
+click, left
+}
 
 move(inputx,inputy)
 {
@@ -354,6 +361,32 @@ stop(){
         SoundSet, -%SoundVolume%
         SoundPlay, %soundg%
         MsgBox, %Mod4% The string was found.
+        SoundSet, +%SoundVolume%
+                
+        Send, {LShift Up}
+        Send, {Ctrl Up}
+        Send, {Alt Up}
+        return 1
+    }
+
+    IfInString clipboardd, %Mod5%
+    {
+        SoundSet, -%SoundVolume%
+        SoundPlay, %soundg%
+        MsgBox, %Mod5% The string was found.
+        SoundSet, +%SoundVolume%
+                
+        Send, {LShift Up}
+        Send, {Ctrl Up}
+        Send, {Alt Up}
+        return 1
+    }
+
+    IfInString clipboardd, %Mod6%
+    {
+        SoundSet, -%SoundVolume%
+        SoundPlay, %soundg%
+        MsgBox, %Mod6% The string was found.
         SoundSet, +%SoundVolume%
                 
         Send, {LShift Up}

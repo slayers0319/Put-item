@@ -6,6 +6,8 @@ ReadSettings(){
     IniRead, Mod2,  settings.ini, settings, Mod2,  "NULL2"
     IniRead, Mod3,  settings.ini, settings, Mod3,  "NULL3"
     IniRead, Mod4,  settings.ini, settings, Mod4,  "NULL4"
+    IniRead, Mod5,  settings.ini, settings, Mod5,  "NULL5"
+    IniRead, Mod6,  settings.ini, settings, Mod6,  "NULL6"
     IniRead, speed,  settings.ini, settings, speed,  40
     IniRead, StorageSpeed,  settings.ini, settings, StorageSpeed,  40
     return
@@ -18,6 +20,8 @@ SaveSettings(){
     IniWrite, %Mod2%,         settings.ini, settings, Mod2
     IniWrite, %Mod3%,         settings.ini, settings, Mod3
     IniWrite, %Mod4%,         settings.ini, settings, Mod4
+    IniWrite, %Mod5%,         settings.ini, settings, Mod5
+    IniWrite, %Mod6%,         settings.ini, settings, Mod6
     IniWrite, %speed%,  settings.ini, settings, speed
     IniWrite, %StorageSpeed%, settings.ini, settings, StorageSpeed
     return

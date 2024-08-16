@@ -19,24 +19,28 @@ Gui Add, Text, x16 y136 w37 h23 +0x200, Mod 1
 Gui Add, Text, x16 y168 w37 h23 +0x200, Mod 2
 Gui Add, Text, x16 y200 w37 h23 +0x200, Mod 3
 Gui Add, Text, x16 y232 w37 h23 +0x200, Mod 4
+Gui Add, Text, x16 y264 w37 h23 +0x200, Mod 5
+Gui Add, Text, x16 y296 w37 h23 +0x200, Mod 6
 Gui Font
 Gui Font, s10, 微軟正黑體
 Gui Add, Edit, vMod1 x56 y136 w157 h24, %Mod1%
 Gui Add, Edit, vMod2 x56 y168 w157 h24, %Mod2%
 Gui Add, Edit, vMod3 x56 y200 w157 h24, %Mod3%
 Gui Add, Edit, vMod4 x56 y232 w157 h24, %Mod4%
+Gui Add, Edit, vMod5 x56 y264 w157 h24, %Mod5%
+Gui Add, Edit, vMod6 x56 y296 w157 h24, %Mod6%
 Gui Font
 ;-----------Speed-------------------------------------
 Gui Font, s16, Calibri
-Gui Add, GroupBox, x8 y264 w219 h80, Speed
+Gui Add, GroupBox, x8 y328 w219 h80, Speed
 Gui Font
 Gui Font, s12, Calibri
-Gui Add, Text, x16 y296 w98 h20 +0x200, Storage Speed
-Gui Add, Text, x16 y320 w99 h21 +0x200, Global Speed
+Gui Add, Text, x16 y360 w98 h20 +0x200, Storage Speed
+Gui Add, Text, x16 y384 w99 h21 +0x200, Global Speed
 Gui Font
 Gui Font, s11, Calibri
-Gui Add, Edit, vStorageSpeed x120 y296 w48 h19, %StorageSpeed%
-Gui Add, Edit, vspeed x120 y320 w48 h19, %speed%
+Gui Add, Edit, vStorageSpeed x120 y360 w48 h19, %StorageSpeed%
+Gui Add, Edit, vspeed x120 y384 w48 h19, %speed%
 Gui Font
 ;-----------HotkeyList-------------------------------------
 Gui Font, s16, Calibri
@@ -69,7 +73,7 @@ Gui Add, Edit, vresolutionY x480 y80 w54 h29, %resolutionY%
 Gui Add, Button, x400 y304 w133 h39, &Apply
 
 
-Gui Show, w544 h351, Put item v2.3
+Gui Show, w544 h415, Put item v2.3
 Return
 
 GuiEscape:

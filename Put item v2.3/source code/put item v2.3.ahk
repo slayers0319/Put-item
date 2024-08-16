@@ -14,6 +14,8 @@ global Mod1
 global Mod2
 global Mod3
 global Mod4
+global Mod5
+global Mod6
 global StorageSpeed
 
 
@@ -68,7 +70,7 @@ ChangeResolution()
 RunGUI()
 
 $f10::  ;show GUI
-    Gui Show, w544 h351, Put item v2.0
+    Gui Show, w544 h415, Put item v2.3
 Return
 
 #IfWinActive, Path of Exile
@@ -96,3 +98,5 @@ Return
 
     ; Esc::ExitApp
 return
+; $f5::Coord()
+; $f6::tick()

@@ -159,7 +159,7 @@ Gui Add, Edit, x408 y80 w52 h29, 1920
 Gui Add, Edit, x480 y80 w54 h29, 1080
 Gui Add, Button, x400 y304 w133 h39, &Apply
 
-Gui Show, w544 h351, Window
+Gui Show, w544 h415, Window
 Return
 
 GuiEscape:
