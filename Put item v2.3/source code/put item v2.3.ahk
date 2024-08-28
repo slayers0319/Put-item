@@ -89,6 +89,8 @@ Return
 
      ;$f2::Chance()
 
+    $f11::Alteration_only()
+
     $f12::Alteration()
 
     `::ExitGame()

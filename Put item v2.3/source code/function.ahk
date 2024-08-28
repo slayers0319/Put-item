@@ -229,6 +229,50 @@ look(inputx,inputy){
     Send, {LShift up}
 }
 
+Alteration_only(){
+    flag:=1
+    MouseMove, CurrentPage[1], CurrentPage[2] ,1
+    Send ^!c
+    sleep speed
+    Send ^!c
+    sleep speed
+    Send ^!c
+    Loop 2000{
+        if( GetKeyState("f4" , "P") ){
+            Send, {LShift Up}
+            Send, {Ctrl Up}
+            Send, {Alt Up}
+            Send, {c Up}
+            return
+        }
+        if stop(){  ;success
+            Send, {LShift Up}
+            Send, {Ctrl Up}
+            Send, {Alt Up}
+            Send, {c Up}
+            return
+        }else{
+            if(flag){
+                Send, {LShift Down}
+                handAlteration()    ;點改造
+                flag:=0
+                ;MsgBox, -----%flag%
+            }else{
+                Send, {LShift Down}
+                MouseMove, CurrentPage[1], CurrentPage[2] ,1
+                sleep speed*2
+                click, left
+                ;MsgBox, %flag%-----
+            }
+            sleep speed
+            MouseMove, CurrentPage[1], CurrentPage[2] ,1
+        }
+    }
+    SoundPlay, %soundg%
+    sleep 500
+    SoundPlay, %soundg%
+}
+
 Alteration(){
     flag:=1
     MouseMove, CurrentPage[1], CurrentPage[2] ,1
